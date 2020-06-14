@@ -3,6 +3,8 @@ var router = express();
 var cheerio = require("cheerio");
 var db = require("../models");
 var axios = require("axios");
+var count = 0;
+
 
 
 router.get("/", function(req, res) {
@@ -50,5 +52,7 @@ router.get("/scrape", function (req, res) {
     })
   
 })
+
+
 
 module.exports = router;
