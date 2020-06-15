@@ -1,6 +1,5 @@
-<div class="container">
 
-<h1>Web Scraped Stock News from stocknews.com</h1>
+  <h1>Web Scraped Stock News from stocknews.com</h1>
   {{#grouped_each 3 news}}
   <div class="row">
     {{#each this }}
@@ -11,22 +10,19 @@
           <h5 class="card-title">{{headline}}</h5>
         </a>
         <p class="card-text">{{summary}}</p>
-       
-          <a href="#" class="btn btn-primary">Save</a>
-          <button type="button" class="btn btn-danger">Delete</button>
-        
+
+        <a href="#" class="btn btn-primary saveArticle" data-id="{{id}}">Save</a>
+
       </div>
     </div>
     {{/each}}
   </div>
   {{/grouped_each}}
-</div>
+
 <style>
   .card-img-top {
-
     width: 200px;
     height: 200px;
-
   }
 
   .card {
@@ -34,6 +30,4 @@
     align-items: center;
     justify-content: center;
   }
-
-
 </style>
