@@ -2,6 +2,7 @@ var express = require("express");
 var handlebars = require("express-handlebars");
 var mongoose = require("mongoose");
 var controller = require("./controller")
+require('dotenv').config();
 
 var PORT = process.env.PORT || 3000;
 
